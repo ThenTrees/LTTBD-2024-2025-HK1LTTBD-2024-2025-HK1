@@ -122,6 +122,179 @@
         <script>
             document.write(difference([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
         </script>
+        <h1>27. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements</h1>
+        <script>
+            const number = [1, 2, 2, 3, 4, 4, 5];
+            const distinctNumbers = getDistinctElements(number);
+            document.write(distinctNumbers);  // Output: [1, 2, 3, 4, 5]
+        </script>
+        <h1>28. Calculate the sum of first 100 prime numbers and return them in an array</h1>
+        <script>
+            // Example usage:
+            const first100Primes = getFirst100Primes();
+            const sum = sumOfPrimes(first100Primes);
+
+            document.write(first100Primes); // Output: The first 100 prime numbers
+            document.write(sum);            
+        </script>
+        <h1>
+            29. Print the distance between the first 100 prime numbers
+        </h1>
+        <script>
+            // Example usage:
+            const first100Prime = getFirst100Primes();
+            printPrimeDistances(first100Prime);
+        </script>
+        <h1>
+            31. Create a function that will return the number of words in a text
+        </h1>
+        <script>
+            const text = "This is an example sentence to count words.";
+            const wordCount = countWords(text);
+            document.write(wordCount);  // Output: 7
+        </script>
+        <h1>
+            32. Create a function that will capitalize the first letter of each word in a text
+        </h1>
+        <script>
+            const sentence = "this is an example sentence.";
+            const capitalizedSentence = capitalizeWords(sentence);
+            document.write(capitalizedSentence);  // Output: "This Is An Example Sentence."
+        </script>
+        <h1>
+            33. Calculate the sum of numbers received in a comma delimited string
+        </h1>
+        <script>
+            const str = "1,2,3,4,5";
+            document.write(sumFromCommaDelimitedString(str)); // Output: 15
+        </script>
+        <h1>
+            34. Create a function that returns an array with words inside a text.
+        </h1>
+        <script>
+            const sentences = "This is an example sentence.";
+            document.write(getWords(sentences)); // Output: ["This", "is", "an", "example", "sentence"]
+        </script>
+        <h1>
+            35. Create a function to convert a CSV text to a “bi-dimensional” array
+        </h1>
+        <script>
+            const csv = "name,age\ntom,30\njane,25";
+            document.write(csvToArray(csv)); // Output: [["name", "age"], ["tom", "30"], ["jane", "25"]]
+        </script>
+        <h1>
+            36. Create a function that converts a string to an array of characters
+        </h1>
+        <script>
+            const texts = "hello";
+            document.write(stringToCharArray(texts)); // Output: ['h', 'e', 'l', 'l', 'o']
+        </script>
+        <h1>
+            37. Create a function that will convert a string in an array containing the ASCII codes of each character
+        </h1>
+        <script>
+            document.write(stringToAsciiArray("ABC")); // Output: [65, 66, 67]
+        </script>
+        <h1>
+            38. Create a function that will convert an array containing ASCII codes in a string
+        </h1>
+        <script>
+            document.write(asciiArrayToString([65, 66, 67])); // Output: "ABC"
+        </script>
+        <h1>
+
+            39. Implement the Caesar cypher
+        </h1>
+        <script>
+
+            document.write(caesarCipher("hello", 3)); // Output: "khoor"
+        </script>
+        <h1>
+
+            40. Implement the bubble sort algorithm for an array of numbers
+        </h1>
+        <script>
+document.write(bubbleSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]
+
+        </script>
+        <h1>
+            41. Create a function to calculate the distance between two points defined by their x, y
+            coordinates
+
+        </h1>
+        <script>
+            document.write(distance(0, 0, 3, 4)); // Output: 5     
+        </script>
+        <h1>
+
+            42. Create a function that will return a Boolean value indicating if two circles
+            defined by center coordinates and radius are intersecting
+        </h1>
+        <script>
+            document.write(circlesIntersect(0, 0, 5, 8, 8, 3)); // Output: false
+        </script>
+        <h1>
+            43. Create a function that will receive a bi-dimensional array as argument and a
+            number and will extract as a unidimensional array the column specified by the
+            number
+
+        </h1>
+        <script>
+            const matrix = [[1, 2], [3, 4], [5, 6]];
+            document.write(extractColumn(matrix, 1)); // Output: [2, 4, 6]
+        </script>
+        <h1>
+
+            44. Create a function that will convert a string containing a binary number into a
+            number
+        </h1>
+        <script>
+            document.write(binaryToNumber("1101")); // Output: 13
+        </script>
+        <h1>
+
+            45. Create a function to calculate the sum of all the numbers in a jagged array
+            (contains numbers or other arrays of numbers on an unlimited number of
+            levels)
+        </h1>
+
+        <script>
+            document.write(sumJaggedArray([1, [2, [3, 4], 5], 6])); // Output: 21
+        </script>
+        <h1>
+            46. Find the maximum number in a jagged array of numbers or array of numbers
+
+        </h1>
+        <script>
+            document.write(maxInJaggedArray([1, [2, [3, 10], 5], 6])); // Output: 1
+        </script>
+        <h1>
+            47. Deep copy a jagged array with numbers or other arrays in a new array
+        </h1>
+        <script>
+            const jaggedArray = [1, [2, [3]], 4];
+            const copiedArray = deepCopyJaggedArray(jaggedArray);
+            document.write(copiedArray); // Output: [1, [2, [3]], 4]
+        </script>
+        <h1>
+            48. Create a function to return the longest word in a string
+        </h1>
+        <script>
+            document.write(longestWord("This is a simple example sentence.")); // Output: "example"
+        </script>
+        <h1>
+            49. Shuffle an array of strings
+        </h1>
+        <script>
+            document.write(shuffleArray(["apple", "banana", "cherry", "date"]));
+        </script>
+        <h1>
+            50. Create a function that will receive n as argument and return an array of n
+            random numbers from 1 to n. The numbers should be unique inside the array.
+        </h1>
+        <script>
+            document.write(uniqueRandomNumbers(5)); // Output: Random unique numbers from 1 to 5
+        </script>
     </div>
 </body>
 
